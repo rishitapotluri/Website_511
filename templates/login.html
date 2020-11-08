@@ -1,0 +1,16 @@
+<head>
+    <meta charset = "UTF-8">
+    <title>Login</title>
+</head>
+<body bgcolor="lavender">
+<h1>Welcome to the login page</h1>
+<form action = "login" method = "POST">
+    {% csrf_token %}
+    User_name = <input type = "text" name = "username"><br>
+    Password = <input type = "password" name = "password"><br>
+    <input type = "submit">
+</form>
+
+<a href = "/">home</a>
+<a href = "/signup">signup</a>
+</body>

@@ -1,0 +1,44 @@
+<head>
+    <meta charset = "UTF-8">
+    <title>Details</title>
+</head>
+<body bgcolor="lavender">
+<h1>Welcome to the details page</h1>
+{% if o1 %}
+<h2>Employee data:</h2>
+<style>
+    th,td{
+    border: 1px black solid;
+    }
+</style>
+<table>
+    <tr>
+        <th>
+            Name
+        </th>
+        <th>
+            Position
+        </th>
+            <th>
+                Address
+        </th>
+            <th>
+            Status
+        </th>
+    </tr>
+    {% for o in o1%}
+    <tr>
+        <td>{{o.name}}</td>
+        <td>{{o.position}}</td>
+        <td>{{o.address}}</td>
+        <td>{{o.status}}</td>
+    </tr>
+{% endfor %}
+</table>
+{% else %}
+<h1>"No Data"</h1>
+<a href = "./">back</a>
+{% endif %}
+
+<li><a href = "/">Home</a></li>
+</body>
