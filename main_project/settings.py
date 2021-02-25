@@ -84,13 +84,25 @@ WSGI_APPLICATION = 'main_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+        'HOST':os.environ.get('DB_HOST'),
+        'NAME':os.environ.get('DB_NAME'),
+        'USER':os.environ.get('DB_USER'),
+        'PASSWORD':os.environ.get('DB_PASS'),
+    }
+}
+
+
+"""
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'db_19',
         'USER': 'postgres',
         'PASSWORD': 'rishi0204',
         'HOST' : 'localhost'
     }
 }
-
+"""
 
 
 # Password validation
