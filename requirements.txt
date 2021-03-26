@@ -4,3 +4,7 @@ psycopg2-binary==2.8.5
 pytz==2020.1
 psycopg2
 wheel
+chardet==1.0.1
+
+
+
