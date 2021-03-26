@@ -5,7 +5,5 @@ pytz==2020.1
 psycopg2
 wheel
 chardet==1.0.1
-six==1.14.0
-
 
 
