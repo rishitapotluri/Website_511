@@ -1,7 +1,6 @@
 Django
-Pillow==7.2.0
-psycopg2-binary==2.8.5
-pytz==2020.1
-psycopg2
+Pillow
+psycopg2-binary
+pytz
 wheel
-six==1.14.0
+six
